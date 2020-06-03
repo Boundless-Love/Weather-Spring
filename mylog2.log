@@ -1,0 +1,84 @@
+2020-06-02 18:31:47.419  INFO 20800 --- [restartedMain] cn.edu.scujcc.NiceWeatherApplication     : Starting NiceWeatherApplication on LAPTOP-S8EDF3BA with PID 20800 (D:\Spring\projects\NiceWeather\bin\main started by 联想 in D:\Spring\projects\NiceWeather)
+2020-06-02 18:31:47.421  INFO 20800 --- [restartedMain] cn.edu.scujcc.NiceWeatherApplication     : No active profile set, falling back to default profiles: default
+2020-06-02 18:31:47.450  INFO 20800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-02 18:31:47.451  INFO 20800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-02 18:31:47.887  INFO 20800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-02 18:31:47.940  INFO 20800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 3 MongoDB repository interfaces.
+2020-06-02 18:31:48.327  INFO 20800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-02 18:31:48.333  INFO 20800 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-02 18:31:48.333  INFO 20800 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-06-02 18:31:48.437  INFO 20800 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-02 18:31:48.437  INFO 20800 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 984 ms
+2020-06-02 18:31:48.600  INFO 20800 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-06-02 18:31:48.639  INFO 20800 --- [cluster-ClusterId{value='5ed62a94a762dd07846180ef', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:31}] to localhost:27017
+2020-06-02 18:31:48.642  INFO 20800 --- [cluster-ClusterId{value='5ed62a94a762dd07846180ef', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 3]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2352400}
+2020-06-02 18:31:48.812  INFO 20800 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-02 18:31:48.915  WARN 20800 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cityController': Unsatisfied dependency expressed through field 'cacheManager'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.cache.CacheManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-06-02 18:31:48.919  INFO 20800 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-02 18:31:48.927  INFO 20800 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-02 18:31:48.996 ERROR 20800 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field cacheManager in cn.edu.scujcc.api.CityController required a bean of type 'org.springframework.cache.CacheManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'cacheManager' in 'CaffeineCacheConfiguration' not loaded because @ConditionalOnClass did not find required class 'com.github.benmanes.caffeine.cache.Caffeine'
+	- Bean method 'cacheManager' in 'JCacheCacheConfiguration' not loaded because @ConditionalOnClass did not find required class 'javax.cache.Caching'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.cache.CacheManager' in your configuration.
+
+2020-06-02 18:35:20.749  INFO 3032 --- [restartedMain] cn.edu.scujcc.NiceWeatherApplication     : Starting NiceWeatherApplication on LAPTOP-S8EDF3BA with PID 3032 (D:\Spring\projects\NiceWeather\bin\main started by 联想 in D:\Spring\projects\NiceWeather)
+2020-06-02 18:35:20.751  INFO 3032 --- [restartedMain] cn.edu.scujcc.NiceWeatherApplication     : No active profile set, falling back to default profiles: default
+2020-06-02 18:35:20.779  INFO 3032 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-02 18:35:20.779  INFO 3032 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-02 18:35:21.201  INFO 3032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-02 18:35:21.246  INFO 3032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 3 MongoDB repository interfaces.
+2020-06-02 18:35:21.593  INFO 3032 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-02 18:35:21.599  INFO 3032 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-02 18:35:21.599  INFO 3032 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-06-02 18:35:21.699  INFO 3032 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-02 18:35:21.699  INFO 3032 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 920 ms
+2020-06-02 18:35:21.858  INFO 3032 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-06-02 18:35:21.917  INFO 3032 --- [cluster-ClusterId{value='5ed62b699c7f27714ccb0c68', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:32}] to localhost:27017
+2020-06-02 18:35:21.922  INFO 3032 --- [cluster-ClusterId{value='5ed62b699c7f27714ccb0c68', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 3]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2813600}
+2020-06-02 18:35:22.135  INFO 3032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-02 18:35:22.175  INFO 3032 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2020-06-02 18:35:22.404  INFO 3032 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-02 18:35:22.525  INFO 3032 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-02 18:35:22.526  INFO 3032 --- [restartedMain] cn.edu.scujcc.NiceWeatherApplication     : Started NiceWeatherApplication in 2.004 seconds (JVM running for 2.986)
+2020-06-02 18:40:20.164  INFO 3032 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-02 18:40:20.165  INFO 3032 --- [Thread-6] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2020-06-02 18:40:20.640  INFO 3032 --- [restartedMain] cn.edu.scujcc.NiceWeatherApplication     : Starting NiceWeatherApplication on LAPTOP-S8EDF3BA with PID 3032 (D:\Spring\projects\NiceWeather\bin\main started by 联想 in D:\Spring\projects\NiceWeather)
+2020-06-02 18:40:20.640  INFO 3032 --- [restartedMain] cn.edu.scujcc.NiceWeatherApplication     : No active profile set, falling back to default profiles: default
+2020-06-02 18:40:20.775  INFO 3032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-02 18:40:20.787  INFO 3032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 3 MongoDB repository interfaces.
+2020-06-02 18:40:20.942  INFO 3032 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-02 18:40:20.943  INFO 3032 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-02 18:40:20.943  INFO 3032 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-06-02 18:40:20.978  INFO 3032 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-02 18:40:20.978  INFO 3032 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 336 ms
+2020-06-02 18:40:20.990  INFO 3032 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-06-02 18:40:20.993  INFO 3032 --- [cluster-ClusterId{value='5ed62c949c7f27714ccb0c69', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:33}] to localhost:27017
+2020-06-02 18:40:20.995  INFO 3032 --- [cluster-ClusterId{value='5ed62c949c7f27714ccb0c69', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 3]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=492200}
+2020-06-02 18:40:21.012  INFO 3032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-02 18:40:21.019  INFO 3032 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2020-06-02 18:40:21.083  INFO 3032 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-02 18:40:21.122  INFO 3032 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-02 18:40:21.123  INFO 3032 --- [restartedMain] cn.edu.scujcc.NiceWeatherApplication     : Started NiceWeatherApplication in 0.506 seconds (JVM running for 301.583)
+2020-06-02 18:40:21.124  INFO 3032 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-06-02 18:46:07.146  INFO 3032 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-06-02 18:46:07.150  INFO 3032 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-02 18:46:07.151  INFO 3032 --- [RMI TCP Connection(4)-127.0.0.1] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
