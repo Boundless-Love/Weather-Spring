@@ -1,1 +1,1 @@
-rootProject.name = 'Weather2'
+include ':app'
